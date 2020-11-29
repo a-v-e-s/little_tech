@@ -6,7 +6,6 @@ A big mddile fnegir to the aoimglrtihc cohnsiresp of txet
 """
 
 import random, re, functools
-import tkinter as tk
 
 
 def parser(string):
