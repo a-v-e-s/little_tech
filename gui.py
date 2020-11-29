@@ -16,9 +16,9 @@ root.title('btos_cnat_raed_tihs!')
 tk.Label(root, text='Enter the string to be scrambled here:').grid(row=1, column=1)
     
 # the output text widget has to be defined here
-_input = tk.Text(root, bg='white', width=80, height=24)
+_input = tk.Text(root, bg='white', wrap='word', width=60, height=24)
 _input.grid(row=2, column=1)
-_output = tk.Text(root, bg='white', width=80, height=24)
+_output = tk.Text(root, bg='white', wrap='word', width=60, height=24)
 _output.grid(row=2, column=3)
 
 # I know it's ugly but we have to define a lambda function
