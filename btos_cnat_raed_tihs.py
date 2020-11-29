@@ -1,14 +1,16 @@
-"""
-btos_cnat_raed_tihs.py
-"""
+#!/usr/bin/env python3
 
+"""
+btos_cnat_raed_tihs.py:
+A big mddile fnegir to the aoimglrtihc cohnsiresp of txet
+"""
 
 import random, re, functools
 import tkinter as tk
 
 
 def parser(string):
-    # here is our pattern:
+    # here is our regular expression:
     patt = re.compile(r'\b[A-Za-z]{4,}\b')
     # find the matches, build the new string
     new_string = ''
@@ -38,3 +40,9 @@ def scrambler(word):
         return scrambler(word)
     else:
         return new_word
+
+
+if __name__ == '__main__':
+    from sys import argv
+    output = parser(argv[1])
+    print(output)
