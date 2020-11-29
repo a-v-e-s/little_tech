@@ -13,6 +13,8 @@ import tkinter as tk
 class Gui:
     def __init__(self):
         root = tk.Tk()
+        root.title('btos_cnat_raed_tihs!')
+        #root.iconbitmap(r'btos_cnat_raed_tihs!')
     
         tk.Label(root, text='Enter the string to be scrambled here:').grid(row=1, column=1)
     
