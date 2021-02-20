@@ -1,0 +1,24 @@
+Gui:
+    minimum_height: 300
+    minimum_width: 200
+    orientation: 'vertical'
+    padding: [0,0,0,0]
+    spacing: 2
+
+    Input:
+        id: _input
+        background_color: [0,0,8,1]
+        foreground_color: [ 0.9, 0.9, 0.9, 1 ]
+        cursor_color: [ 0.9, 0.9, 0.9, 1 ]
+        font: 'fonts/LiberationMono-Bold.ttf'
+
+    BigRed:
+        text: 'Obfuscate!'
+        on_press: obfuscate(parent.ids._input.text)
+
+    Output:
+        id: output
+        back_ground_color: [0,0,0,1]
+        foreground_color: [ 0, 0.9, 0, 1 ]
+        cursor_color: [ 0, 0.9, 0, 1 ]
+        font: 'fonts/LiberationMono-Bold.ttf'
